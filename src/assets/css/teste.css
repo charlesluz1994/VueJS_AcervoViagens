@@ -1,0 +1,4 @@
+/*criando este arquivo css no projeto, é possível importa-lo no projeto onde quiser. Basta importa-lo no MAIN*/
+* {
+    text-shadow: 5px 5px 5px;
+}

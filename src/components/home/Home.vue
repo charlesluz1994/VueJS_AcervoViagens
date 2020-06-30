@@ -1,5 +1,9 @@
 <template>
   <div>
+   <!-- Caso Queira importar uma imagem do projeto, salva na sua máquina.
+   Lembre-se de copiar também a pasta static após o build para subir em produção. 
+   <img src="/static/Europa.jpeg">
+   --> 
     <h1 class="centralizado">{{ titulo }}</h1>
     <p v-show="mensagem" class="centralizado"> {{ mensagem }}</p>
     <input
@@ -10,7 +14,7 @@
     />
 
     <ul class="lista-fotos">
-      <li class="lista-fotos-item" v-for="foto of fotosComFiltro">
+      <li class="lista-fotos-item" v-for="foto of fotosComFiltro" :key="foto._id">
 
         <meu-painel :titulo="foto.titulo" >
 
